@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Site da Advogada - Rolling Page
 
-## Getting Started
+Este é o site pessoal de uma advogada, construído com uma arquitetura de **Single Page Application (SPA)** utilizando **React**, **Next.js**, **TypeScript**, **Tailwind CSS** e **ShadCN**. O design é baseado em uma estrutura de **rolling page**, onde todo o conteúdo é carregado de forma contínua conforme o usuário rola a página.
 
-First, run the development server:
+## Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **React**: Biblioteca JavaScript para construir interfaces de usuário.
+- **Next.js**: Framework React para desenvolvimento de aplicações web com renderização no lado do servidor e geração de sites estáticos.
+- **TypeScript**: Superset de JavaScript que adiciona tipagem estática e outros recursos.
+- **Tailwind CSS**: Framework de CSS para construção de designs responsivos e customizáveis de forma rápida.
+- **ShadCN**: Utilitário para componentes UI que melhora a estilização e a usabilidade.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Visualizar Online
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Você pode visualizar o site online através do seguinte link:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+[Veja o site online](https://www.seudominio.com)
 
-## Learn More
+## Pré-requisitos
 
-To learn more about Next.js, take a look at the following resources:
+Antes de rodar o projeto, certifique-se de ter o **Node.js** instalado em sua máquina. Caso não tenha, você pode baixá-lo [aqui](https://nodejs.org/).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Como rodar o projeto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clone o repositório:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   git clone <URL-do-repositório>
+   ```
