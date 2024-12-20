@@ -28,15 +28,15 @@ export default function GoogleReviews() {
   return (
     <section
       id="avaliacoes"
-      className="min-h-screen flex items-center justify-center  bg-zinc-700 py-12 px-4 sm:px-6 lg:px-8"
+      className="min-h-screen flex items-center justify-center bg-zinc-700 py-12 px-4 sm:px-6 lg:px-8"
     >
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold mb-12 text-center text-gray-100">
+        <div className="bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-4xl mb-32 mt-8">
           O que nossos clientes dizem:
-        </h2>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           {reviews.map((review, index) => (
-            <Card key={index} className="b bg-zinc-600 text-gray-100">
+            <Card key={index} className="bg-zinc-600 text-gray-100">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <div className="flex-1">
@@ -66,7 +66,7 @@ export default function GoogleReviews() {
           ))}
         </div>
         <div className="flex flex-col items-center">
-          <p className="text-gray-100 text-lg mb-4">
+          <p className="bg-gradient-to-br from-slate-300 to-slate-500  bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-2xl mb-4 mt-8">
             Escaneie para deixar sua avaliação:
           </p>
           <Image

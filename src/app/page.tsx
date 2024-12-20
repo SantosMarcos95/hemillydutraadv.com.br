@@ -8,7 +8,7 @@ import Navigation from "@/components/Navigation";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gray-900 text-gray-300">
+    <main className="relative">
       <Navigation />
       <Hero
         description={{
@@ -21,6 +21,7 @@ export default function Home() {
           footer: "Advocacia Bublitz – Confiança e Resultados",
         }}
       />
+
       <AreasAtuacao />
       <Equipe />
       <GoogleReviews />

@@ -8,12 +8,12 @@ export default function Contato() {
       className="min-h-screen flex items-center justify-center  bg-zinc-800 py-12 px-4 sm:px-6 lg:px-8"
     >
       <div className="max-w-7xl w-full mx-auto p-">
-        <h2 className="text-3xl font-bold mb-52 text-center text-gray-100">
+        <h2 className="bg-gradient-to-br from-slate-300 to-slate-500  bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-4xl mb-32 mt-8">
           Entre em Contato:
         </h2>
         <div className="flex flex-col md:flex-row justify-between items-start">
           <div className="md:w-1/2 mb-8 md:mb-0">
-            <h3 className="text-2xl font-semibold mb-4 text-gray-100">
+            <h3 className="bg-gradient-to-br from-slate-300 to-slate-500  bg-clip-text  text-4xl font-medium tracking-tight text-transparent md:text-2xl mb-4 mt-8">
               Informações de Contato:
             </h3>
             <div className="space-y-4">
@@ -36,7 +36,7 @@ export default function Contato() {
             </div>
           </div>
           <div className="md:w-1/2 md:pl-8">
-            <h3 className="text-2xl font-semibold mb-4 text-gray-100">
+            <h3 className="bg-gradient-to-br from-slate-300 to-slate-500  bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-2xl mb-4 mt-8">
               Localização:
             </h3>
             <div className="w-full aspect-w-16 aspect-h-9">
