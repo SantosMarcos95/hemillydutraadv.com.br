@@ -5,6 +5,8 @@ import Footer from "@/components/Footer";
 import GoogleReviews from "@/components/GoogleReviews";
 import Hero from "@/components/Hero";
 import Navigation from "@/components/Navigation";
+import "../app/globals.css";
+import "./globals.css";
 
 export default function Home() {
   return (

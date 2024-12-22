@@ -27,7 +27,8 @@ export default function Hero({ description }: HeroProps) {
                 alt="Dra. Hemilly"
                 width={400}
                 height={400}
-                className="shadow-lg mx-auto rounded-3xl "
+                className="shadow-lg mx-auto rounded-3xl"
+                priority
               />
             </BackgroundGradient>
           </div>
