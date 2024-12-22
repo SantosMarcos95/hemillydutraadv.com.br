@@ -7,9 +7,9 @@ export default function Footer() {
         <div className="flex items-center mb-1">
           <Scale className="h-6 w-6 " />
         </div>
-        <p className="">OAB/SC 70150</p>
+        <p className="">OAB/SC 70.150</p>
         <p>
-          &copy; {new Date().getFullYear()} Dra. Hemilly Dultra. Todos os
+          &copy; {new Date().getFullYear()} Dra. Hemilly Dutra. Todos os
           direitos reservados.
         </p>
       </div>

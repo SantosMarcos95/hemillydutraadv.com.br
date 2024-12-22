@@ -9,7 +9,7 @@ import { BackgroundGradient } from "./ui/background-gradient";
 
 const equipe = [
   {
-    nome: "Dra. Jully Bublitz",
+    nome: "Dra. July Bublitz",
     cargo: "Advogada Sênior | CEO | Founder",
     foto: draJully,
   },

@@ -15,7 +15,7 @@ export default function Home() {
           name: "Dra. Hemilly",
           subtitle: "Advogada | Advocacia Bublitz",
           text1:
-            "A Dra. Hemilly Dultra faz parte da Advocacia Bublitz, um escritório com mais de 12 anos de experiência nas áreas Trabalhista, Civil, Previdenciária e Empresarial.",
+            "A Dra. Hemilly Dutra faz parte da Advocacia Bublitz, um escritório com mais de 12 anos de experiência nas áreas Trabalhista, Civil, Previdenciária e Empresarial.",
           text2:
             "Comprometida com a ética e resultados eficazes, oferece soluções jurídicas personalizadas, sempre focando na melhor defesa dos interesses de seus clientes.",
           footer: "Advocacia Bublitz – Confiança e Resultados",

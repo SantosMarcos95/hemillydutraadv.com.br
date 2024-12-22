@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: "Dra. Hemilly Dultra Advogada Grande Florianópolis",
+    title: "Dra. Hemilly Dutra Advogada Grande Florianópolis",
     description:
       "Escritório Bublitz: escritório de advocacia especializado em direito trabalhista, Direito Previdenciário, Direito Civil, Direito Empresarial. Atendimento personalizado e soluções jurídicas eficientes em São Paulo.",
     keywords:
