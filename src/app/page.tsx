@@ -4,15 +4,28 @@ import Equipe from "@/components/Equipe";
 import Footer from "@/components/Footer";
 import GoogleReviews from "@/components/GoogleReviews";
 import Hero from "@/components/Hero";
-import Navigation from "@/components/Navigation";
+import Sobre from "@/components/Sobre";
+import { FloatingNav } from "@/components/ui/floating-navbar";
 import "../app/globals.css";
 import "./globals.css";
 
 export default function Home() {
   return (
     <main className="relative">
-      <Navigation />
-      <Hero
+      <FloatingNav
+        navItems={[
+          { name: "Início", link: "#home" },
+          { name: "Sobre", link: "#sobre" },
+          { name: "Áreas", link: "#areas" },
+          { name: "Equipe", link: "#equipe" },
+          { name: "Avaliações", link: "#avaliacoes" },
+          { name: "Contato", link: "#contato" },
+        ]}
+      />
+      <section id="home">
+        <Hero />
+      </section>
+      <Sobre
         description={{
           name: "Dra. Hemilly",
           subtitle: "Advogada | Advocacia Bublitz",

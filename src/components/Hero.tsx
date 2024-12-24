@@ -1,46 +1,40 @@
 import Image from "next/image";
+import backgroundHero from "../../public/backgroundHero.jpg";
+import { HoverBorderGradient } from "./ui/hover-border-gradient";
+import { TextGenerateEffect } from "./ui/text-generate-effect";
 
-import draHemilly from "../../public/dra-hemilly.jpeg";
-import { BackgroundGradient } from "./ui/background-gradient";
-interface HeroProps {
-  description: {
-    name: string;
-    subtitle: string;
-    text1: string;
-    text2: string;
-    footer: string;
-  };
-}
-
-export default function Hero({ description }: HeroProps) {
+export default function Hero() {
   return (
     <section
-      id="sobre"
-      className="min-h-screen flex items-center justify-center bg-zinc-800 py-12 px-4 sm:px-6 lg:px-8 mt-8"
+      id="home"
+      className="relative min-h-screen flex items-center justify-center "
     >
-      <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row items-center">
-          <div className="relative  rounded-3xl  shadow-lg mx-auto transition-transform duration-300 ease-in-out hover:scale-105">
-            <BackgroundGradient>
-              <Image
-                src={draHemilly}
-                alt="Dra. Hemilly"
-                width={400}
-                height={400}
-                className="shadow-lg mx-auto rounded-3xl"
-                priority
-              />
-            </BackgroundGradient>
-          </div>
-          <div className="md:w-1/2 md:pl-12 text-center md:text-left p-4">
-            <h1 className="text-4xl font-bold mb-2">{description.name}</h1>
-            <h2 className="text-2xl text-gray-400 mb-4">
-              {description.subtitle}
-            </h2>
-            <p className="text-lg mb-4">{description.text1}</p>
-            <p className="text-lg mb-6">{description.text2}</p>
-            <p className="text-xl font-semibold">{description.footer}</p>
-          </div>
+      <div className=" flex min-h-screen items-center justify-center ">
+        <Image
+          src={backgroundHero}
+          alt="Background"
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+          className="z-0"
+        />
+        <div className="z-10 flex flex-col items-center text-center text-white  md:w-1/2 md:pl-12 md:text-center p-4  ">
+          <section className="min-h-screen flex flex-col items-center justify-center space-y-8 ">
+            <h1 className="mb-4 text-4xl font-bold">
+              Confiança e Experiência Jurídica ao Seu Lado
+            </h1>
+            <TextGenerateEffect
+              words="Sou Dra. Hemilly Dutra, Advogada Pós Graduada, dedicada a
+            oferecer soluções jurídicas personalizadas. Meu compromisso é
+            proteger seus direitos e trabalhar incansavelmente para alcançar os
+            melhores resultados para você. Juntos, transformaremos desafios
+            legais em soluções eficazes."
+              className="text-center  font-medium"
+              duration={2}
+              filter={false}
+            />
+            <HoverBorderGradient>Comece Sua Jornada</HoverBorderGradient>
+          </section>
         </div>
       </div>
     </section>

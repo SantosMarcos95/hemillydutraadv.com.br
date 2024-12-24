@@ -43,9 +43,9 @@ export default function Equipe() {
           }}
           className=" bg-gradient-to-br from-slate-300 to-slate-500  bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-4xl mb-8 mt-8 "
         >
-          Equipe:
+          Equipe
         </motion.h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 ">
+        <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 ">
           {equipe.map((membro, index) => (
             <motion.div
               key={membro.nome}
@@ -58,8 +58,8 @@ export default function Equipe() {
                 <Image
                   src={membro.foto}
                   alt={membro.nome}
-                  width={400}
-                  height={400}
+                  width={200}
+                  height={200}
                   className=" mx-auto rounded-3xl hover:opacity-90 transition-opacity duration-300"
                 />
               </BackgroundGradient>

@@ -32,7 +32,7 @@ export default function GoogleReviews() {
     >
       <div className="max-w-7xl mx-auto">
         <div className="bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-4xl mb-32 mt-8">
-          O que nossos clientes dizem:
+          O que nossos clientes dizem
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           {reviews.map((review, index) => (
@@ -67,7 +67,7 @@ export default function GoogleReviews() {
         </div>
         <div className="flex flex-col items-center">
           <p className="bg-gradient-to-br from-slate-300 to-slate-500  bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-2xl mb-4 mt-8">
-            Escaneie para deixar sua avaliação:
+            Escaneie para deixar sua avaliação
           </p>
           <Image
             src={qrcode}
