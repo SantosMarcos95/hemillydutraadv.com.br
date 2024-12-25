@@ -38,6 +38,13 @@ export default function Navigation() {
           <SheetContent side="right" className="bg-gray-800">
             <nav className="flex flex-col space-y-4">
               <a
+                href="#home"
+                className="text-gray-300 hover:text-white"
+                onClick={() => setIsOpen(false)}
+              >
+                Home
+              </a>
+              <a
                 href="#sobre"
                 className="text-gray-300 hover:text-white"
                 onClick={() => setIsOpen(false)}

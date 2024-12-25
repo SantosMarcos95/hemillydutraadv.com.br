@@ -67,7 +67,7 @@ export default function AreasAtuacao() {
           }}
           className=" bg-gradient-to-br from-slate-300 to-slate-500  bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-4xl mb-32 mt-8 "
         >
-          Áreas de Atuação:
+          Áreas de Atuação
         </motion.h1>
 
         <div className="grid lg:grid-cols-4 gap-6  ">

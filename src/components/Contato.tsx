@@ -9,12 +9,12 @@ export default function Contato() {
     >
       <div className="max-w-7xl w-full mx-auto p-">
         <h2 className="bg-gradient-to-br from-slate-300 to-slate-500  bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-4xl mb-32 mt-8">
-          Entre em Contato:
+          Entre em Contato
         </h2>
         <div className="flex flex-col md:flex-row justify-between items-start">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <h3 className="bg-gradient-to-br from-slate-300 to-slate-500  bg-clip-text  text-4xl font-medium tracking-tight text-transparent md:text-2xl mb-4 mt-8">
-              Informações de Contato:
+              Informações de Contato
             </h3>
             <div className="space-y-4">
               <p className="flex items-center text-gray-300">
@@ -37,7 +37,7 @@ export default function Contato() {
           </div>
           <div className="md:w-1/2 md:pl-8">
             <h3 className="bg-gradient-to-br from-slate-300 to-slate-500  bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-2xl mb-4 mt-8">
-              Localização:
+              Localização
             </h3>
             <div className="w-full aspect-w-16 aspect-h-9">
               <iframe
