@@ -12,6 +12,7 @@ module.exports = {
   ],
   theme: {
     extend: {
+      serif: ['"Noto Serif"', "serif"],
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",

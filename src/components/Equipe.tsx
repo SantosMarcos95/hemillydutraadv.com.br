@@ -2,9 +2,9 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import draAline from "../../public/dra-aline.webp";
-import draJully from "../../public/dra-jully.webp";
-import draMallu from "../../public/dra-mallu.webp";
+import draAline from "../../public/advogadas/dra-aline.webp";
+import draJully from "../../public/advogadas/dra-jully.webp";
+import draMallu from "../../public/advogadas/dra-mallu.webp";
 import { BackgroundGradient } from "./ui/background-gradient";
 
 const equipe = [

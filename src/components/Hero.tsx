@@ -1,5 +1,5 @@
 import Image from "next/image";
-import backgroundHero from "../../public/backgroundHero.jpg";
+import backgroundHero from "../../public/background/backgroundHero.jpg";
 import { HoverBorderGradient } from "./ui/hover-border-gradient";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 
@@ -33,7 +33,13 @@ export default function Hero() {
               duration={2}
               filter={false}
             />
-            <HoverBorderGradient>Comece Sua Jornada</HoverBorderGradient>
+
+            <HoverBorderGradient
+              phoneNumber="5548984695233"
+              message="Olá, gostaria de agendar um horário para atendimento!."
+            >
+              Relate Seu Problema
+            </HoverBorderGradient>
           </section>
         </div>
       </div>
