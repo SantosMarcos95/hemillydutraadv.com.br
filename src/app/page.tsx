@@ -3,6 +3,7 @@ import Contato from "@/components/Contato";
 import Equipe from "@/components/Equipe";
 import Footer from "@/components/Footer";
 import GoogleReviews from "@/components/GoogleReviews";
+
 import Hero from "@/components/Hero";
 import Sobre from "@/components/Sobre";
 import { FloatingNav } from "@/components/ui/floating-navbar";
@@ -11,7 +12,7 @@ import "./globals.css";
 
 export default function Home() {
   return (
-    <main className="relative">
+    <main className="relative font-serif">
       <FloatingNav
         navItems={[
           { name: "Início", link: "#home" },
