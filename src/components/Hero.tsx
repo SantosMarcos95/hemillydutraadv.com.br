@@ -15,7 +15,7 @@ export default function Hero() {
         quality={100}
         className="z-0"
       />
-      <div className="z-10 flex flex-col items-center text-center text-white md:w-1/2 p-4 space-y-8">
+      <div className="z-10  flex flex-col items-center text-center rounded-3xl bg-black bg-opacity-50 text-white md:w-1/2 p-8 space-y-8 backdrop-blur-sm">
         <h1 className="mb-4 text-4xl font-bold">
           Confiança e Experiência Jurídica ao Seu Lado
         </h1>
