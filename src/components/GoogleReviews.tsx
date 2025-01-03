@@ -1,8 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Star } from "lucide-react";
+import { ChevronDown, Star } from "lucide-react";
 import Image from "next/image";
+import backgorund from "../../public/background/backgroundEquipe.jpeg";
 import qrcode from "../../public/qrcode.png";
-
+import { HoverBorderGradient } from "./ui/hover-border-gradient";
 const reviews = [
   {
     name: "Ana Caroline de Souza",
@@ -11,10 +12,10 @@ const reviews = [
       "Atendimento excelente, principalmente da Hemilly, que se mostrou uma profissional incrível e muito dedicada!",
   },
   {
-    name: "Tainara Cristina Jordao",
+    name: "Roselei Ragazzon",
     rating: 5,
     comment:
-      "Equipe competente. Sempre fazendo o possível e o impossível pra conseguir atender os seus cliente, trazendo o resultado para os seus anseios.",
+      "Contratar este escritório foi a melhor decisão que tomei. Além do suporte excepcional, eles conseguiram um resultado muito além do que eu esperava. A equipe é extremamente eficiente e ágil, sempre priorizando os interesses do cliente. Altamente recomendável!",
   },
   {
     name: "Fernando Santana Lima",
@@ -28,10 +29,18 @@ export default function GoogleReviews() {
   return (
     <section
       id="avaliacoes"
-      className="min-h-screen flex items-center justify-center bg-zinc-700 py-12 px-4 sm:px-6 lg:px-8"
+      className=" relative  min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8"
     >
-      <div className="max-w-7xl mx-auto">
-        <div className="bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-4xl mb-32 mt-8">
+      <Image
+        src={backgorund}
+        alt="Background"
+        layout="fill"
+        objectFit="cover"
+        quality={100}
+        className="z-0 blur-sm"
+      />
+      <div className="z-10 max-w-7xl mx-auto">
+        <div className="bg-black/50 bg-gradient-to-br from-slate-300 to-slate-300 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-4xl mb-32 mt-8">
           O que nossos clientes dizem
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
@@ -66,9 +75,12 @@ export default function GoogleReviews() {
           ))}
         </div>
         <div className="flex flex-col items-center">
-          <p className="bg-gradient-to-br from-slate-300 to-slate-500  bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-2xl mb-4 mt-8">
-            Escaneie para deixar sua avaliação
-          </p>
+          <HoverBorderGradient>
+            <a href="https://www.google.com/search?q=escritorio+bublitz&rlz=1C1FKPE_pt-PTBR1108BR1108&oq=escritorio+bubl&gs_lcrp=EgZjaHJvbWUqCAgBEAAYFhgeMgYIABBFGDkyCAgBEAAYFhgeMggIAhAAGBYYHjIICAMQABgWGB4yCggEEAAYgAQYogQyCggFEAAYogQYiQUyCggGEAAYogQYiQUyCggHEAAYgAQYogQyCggIEAAYgAQYogTSAQg0MjE1ajBqNKgCALACAQ&sourceid=chrome&ie=UTF-8#">
+              Escaneie o QR Code ou clique aqui para ver mais
+            </a>
+          </HoverBorderGradient>
+          <ChevronDown className="mt-2 animate-bounce" size={32} />
           <Image
             src={qrcode}
             alt="QR Code para avaliações do Google"
