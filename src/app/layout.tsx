@@ -10,7 +10,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: "Dra. Hemilly Dutra Advogada Grande Florianópolis",
     description:
-      "Escritório Bublitz: escritório de advocacia especializado em direito trabalhista, Direito Previdenciário, Direito Civil, Direito Empresarial. Atendimento personalizado e soluções jurídicas eficientes em São Paulo.",
+      "Escritório Bublitz: escritório de advocacia especializado em direito trabalhista, Direito Previdenciário, Direito Civil, Direito Empresarial. Atendimento personalizado e soluções jurídicas eficientes na Grande FLorianópolis.",
     keywords:
       "advocacia, direito trabalhista, direito civil, advogados, adivogado Palhoça, adivogado Palhoca, adivogado Sao jose, adivogado São José, adivogado Florianopolis, adivogado Florianópolis, adivogado trabalhista, advogado civil, ",
     icons: {
