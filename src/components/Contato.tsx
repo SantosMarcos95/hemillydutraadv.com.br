@@ -35,7 +35,7 @@ export default function Contato() {
               </p>
             </div>
           </div>
-          <div className="md:w-1/2 md:pl-8">
+          <div className="w-full flex flex-col items-center md:w-1/2 ">
             <h3 className="bg-gradient-to-br from-slate-300 to-slate-500  bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-2xl mb-4 mt-8">
               Localização
             </h3>

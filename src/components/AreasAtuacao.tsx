@@ -20,8 +20,7 @@ const areas = [
   },
   {
     titulo: "Direito Empresarial",
-    descricao:
-      "Constituição de empresas, contratos comerciais e recuperação judicial.",
+    descricao: "Constituição de empresas, contratos comerciais.",
   },
   {
     titulo: "Direito Previdenciário",
