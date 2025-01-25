@@ -4,8 +4,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-import background from "../../public/background/backgroundAreas.jpeg";
-import { BackgroundGradient } from "./ui/background-gradient";
+import background from "../../../public/background/backgroundAreas.jpeg";
+import { BackgroundGradient } from "@/components/ui/background-gradient";
 
 const areas = [
   {
@@ -39,7 +39,7 @@ function AreaCard({
   return (
     <div className="transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
       <BackgroundGradient>
-        <Card className="rounded-3xl bg-zinc-600 text-gray-100 h-[200px] overflow-hidden">
+        <Card className="rounded-3xl bg-black bg-opacity-50 text-gray-100 h-[200px] overflow-hidden">
           <CardHeader>
             <CardTitle>{titulo}</CardTitle>
           </CardHeader>

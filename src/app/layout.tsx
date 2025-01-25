@@ -1,8 +1,10 @@
 import { WhatsAppButton } from "@/components/WhatsAppButton";
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "../app/globals.css";
 import "./globals.css";
+
+import Footer from "@/components/Footer";
+import { MobileMenu } from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,16 +28,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className}>
-        <div className="relative w-full overflow-hidden">
-          <div className="relative z-10">{children}</div>
-        </div>
-
+      <body className={`${inter.className} flex flex-col min-h-screen`}>
+        <main className="flex-grow">{children}</main>
+        <MobileMenu />
         <WhatsAppButton
           phoneNumber="5548984695233"
-          className=" fixed bottom-8 right-10 z-50 shadow-lg"
-          message="Olá, gostaria de agendar um horário para atendimento!."
+          className="fixed bottom-20 right-4 z-50 shadow-lg"
+          message="Olá, gostaria de agendar um horário para atendimento!"
         />
+        <Footer />
       </body>
     </html>
   );
