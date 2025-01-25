@@ -1,9 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { ChevronDown, Star } from "lucide-react";
 import Image from "next/image";
-import backgorund from "../../public/background/backgroundEquipe.jpeg";
-import qrcode from "../../public/qrcode.png";
-import { HoverBorderGradient } from "./ui/hover-border-gradient";
+import backgorund from "../../../public/background/backgroundEquipe.jpeg";
+import qrcode from "../../../public/qrcode.png";
+import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
+
 const reviews = [
   {
     name: "Ana Caroline de Souza",
@@ -45,7 +46,7 @@ export default function GoogleReviews() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           {reviews.map((review, index) => (
-            <Card key={index} className="bg-zinc-600 text-gray-100">
+            <Card key={index} className=" bg-black bg-opacity-50 text-gray-100">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <div className="flex-1">

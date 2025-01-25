@@ -1,11 +1,10 @@
 "use client";
-
 import { motion } from "framer-motion";
 import Image from "next/image";
-import draAline from "../../public/advogadas/dra-aline.webp";
-import draJully from "../../public/advogadas/dra-jully.webp";
-import draMallu from "../../public/advogadas/dra-mallu.webp";
-import { BackgroundGradient } from "./ui/background-gradient";
+import draAline from "../../../public/advogadas/dra-aline.webp";
+import draJully from "../../../public/advogadas/dra-jully.webp";
+import draMallu from "../../../public/advogadas/dra-mallu.webp";
+import { BackgroundGradient } from "@/components/ui/background-gradient";
 
 const equipe = [
   {
@@ -30,7 +29,7 @@ export default function Equipe() {
   return (
     <section
       id="equipe"
-      className="min-h-screen flex items-center justify-center bg-zinc-800 py-12 px-4 sm:px-6 lg:px-8 "
+      className="min-h-screen flex items-center justify-center  py-12 px-4 sm:px-6 lg:px-8 "
     >
       <div className="max-w-7xl mx-auto">
         <motion.h1

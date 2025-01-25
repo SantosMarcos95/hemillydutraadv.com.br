@@ -1,16 +1,18 @@
 import { Scale } from "lucide-react";
-
+export const data = {
+  oab: "OAB/SC 70.150",
+  title: "Dra. Hemilly Dutra. Todos os direitos reservados.",
+};
 export default function Footer() {
   return (
-    <footer className="flex justify-center items-center bg-zinc-700 text-gray-300  ">
+    <footer className="fixed bottom-0 left-0 w-full z-50  flex justify-center items-center bg-black bg-opacity-50 text-gray-300  ">
       <div className="container p-2 flex justify-center items-center gap-4">
         <div className="flex items-center mb-1">
           <Scale className="h-6 w-6 " />
         </div>
-        <p className="">OAB/SC 70.150</p>
+        <p className="">{data.oab}</p>
         <p>
-          &copy; {new Date().getFullYear()} Dra. Hemilly Dutra. Todos os
-          direitos reservados.
+          &copy; {new Date().getFullYear()} {data.title}
         </p>
       </div>
     </footer>
