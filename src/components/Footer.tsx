@@ -6,11 +6,11 @@ export const data = {
 export default function Footer() {
   return (
     <footer className="fixed bottom-0 left-0 w-full z-50  flex justify-center items-center bg-black bg-opacity-50 text-gray-300  ">
-      <div className="container p-2 flex justify-center items-center gap-4">
+      <div className="container flex justify-center items-center gap-4 text-xs">
         <div className="flex items-center mb-1">
           <Scale className="h-6 w-6 " />
         </div>
-        <p className="">{data.oab}</p>
+        <p>{data.oab}</p>
         <p>
           &copy; {new Date().getFullYear()} {data.title}
         </p>

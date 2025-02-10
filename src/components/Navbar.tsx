@@ -24,7 +24,7 @@ export function MobileMenu() {
     <div className="fixed top-0 left-0 right-0  bg-black bg-opacity-50  text-white border-b border-gray-400/20 z-50">
       <div className="container mx-auto">
         {/* Header Content */}
-        <div className="p-4 flex items-center justify-between">
+        <div className=" flex items-center justify-between">
           <div className="text-sm font-semibold text-gray-100">
             Dra. Hemilly Dutra
           </div>
@@ -59,18 +59,18 @@ export function MobileMenu() {
               <span>Início</span>
             </a>
             <a
-              href="/areasatuacao"
-              className="flex items-center gap-3 text-gray-300 hover:text-gray-200"
-            >
-              <Scale className="h-5 w-5" />
-              <span>Áreas de Atuação</span>
-            </a>
-            <a
               href="/sobre"
               className="flex items-center gap-3 text-gray-300 hover:text-gray-200"
             >
               <Book className="h-5 w-5" />
               <span>Sobre</span>
+            </a>
+            <a
+              href="/areasatuacao"
+              className="flex items-center gap-3 text-gray-300 hover:text-gray-200"
+            >
+              <Scale className="h-5 w-5" />
+              <span>Áreas de Atuação</span>
             </a>
             <a
               href="/equipe"
