@@ -28,7 +28,9 @@ export default function ExpandableCardDemo({ cards }: { cards: any[] }) {
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [active]);
 
-  useOutsideClick(ref, () => setActive(null)); // Fechar ao clicar fora
+  useOutsideClick(ref as React.RefObject<HTMLDivElement>, () =>
+    setActive(null)
+  );
 
   return (
     <>
