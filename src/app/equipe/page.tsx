@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+
 import { BackgroundGradient } from "@/components/ui/background-gradient";
 import { useEffect, useState } from "react";
 import LoadingScreen from "@/components/loading-screen";
@@ -9,17 +10,20 @@ const equipe = [
   {
     nome: "Dra. July Bublitz",
     cargo: "Advogada Sênior | CEO | Founder",
+
     foto: "https://drive.google.com/uc?export=view&id=1VUMHQjFszSpBHnjiNOoBYQYMt5HRN10j",
   },
   {
     nome: "Dra. Aline",
     cargo: "Advogado Sênior | Coordenadora Geral",
+
     foto: "https://drive.google.com/uc?export=view&id=1ojp5WP-VIVc0Wo5IFfA_MMPWBDmcTt6c",
   },
 
   {
     nome: "Dra. Mallu",
     cargo: "Advogada Pleno | Coordenadora Previdenciário",
+
     foto: "https://drive.google.com/uc?export=view&id=1uUGLVFglJyri_z-jmaDDYheOVGGZ3zmD",
   },
 ];

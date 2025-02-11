@@ -2,10 +2,11 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { ChevronDown, Star } from "lucide-react";
 import Image from "next/image";
-import qrcode from "../../../public/qrcode.png";
+
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { useEffect, useState } from "react";
 import LoadingScreen from "@/components/loading-screen";
+import qrcode from "../../../public/qrcode.png";
 
 const items = [
   {
@@ -47,6 +48,7 @@ export default function GoogleReviews() {
       </div>
     );
   }
+
   return (
     <section
       id="avaliacoes"
@@ -71,6 +73,7 @@ export default function GoogleReviews() {
                 <div className="flex items-center mb-4">
                   <div className="flex-1">
                     <h3 className="font-semibold">{item.name}</h3>
+
                     <div className="flex items-center">
                       {[...Array(5)].map((_, i) => (
                         <Star
@@ -90,6 +93,7 @@ export default function GoogleReviews() {
                     className="w-6 h-6"
                   />
                 </div>
+
                 <p className="text-sm">{item.comment}</p>
               </CardContent>
             </Card>

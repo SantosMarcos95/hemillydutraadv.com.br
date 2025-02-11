@@ -1,3 +1,4 @@
+"use client";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import Image from "next/image";
@@ -13,7 +14,8 @@ export default function Hero() {
         quality={100}
         className="z-0"
       />
-      <div className="z-10  flex flex-col items-center text-center rounded-3xl dark:text-white bg-black bg-opacity-50 md:w-1/2 p-6 space-y-8 backdrop-blur-sm">
+
+      <div className="z-10  flex flex-col items-center text-center rounded-3xl dark:text-white bg-black bg-opacity-50 md:w-1/2 p-8 space-y-8 backdrop-blur-sm">
         <h1 className="mb-4 text-4xl font-bold">
           Confiança e Experiência Jurídica ao Seu Lado
         </h1>
@@ -28,10 +30,6 @@ export default function Hero() {
         >
           Relate Seu Problema
         </HoverBorderGradient>
-        {/* <div className="flex flex-col items-center text-lg hover:text-gray-200 transition-colors duration-300 mt-8">
-          Saiba mais
-          <ChevronDown className="mt-2 animate-bounce" size={32} />
-        </div> */}
       </div>
     </main>
   );

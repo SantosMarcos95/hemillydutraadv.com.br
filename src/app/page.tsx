@@ -1,7 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
-import Hero from "@/components/hero"; // Seu componente Hero
+
 import LoadingScreen from "@/components/loading-screen";
+import Hero from "@/app/hero";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);

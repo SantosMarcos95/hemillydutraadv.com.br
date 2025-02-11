@@ -113,17 +113,15 @@ export default function AreasAtuacao() {
 
   useEffect(() => {
     const loadData = async () => {
-      setLoading(false); // Após o tempo, o estado de loading é alterado para false
+      setLoading(false);
     };
     loadData();
   }, []);
 
   if (loading) {
-    // Exibe um indicador de carregamento até a página estar pronta
     return (
       <div className="flex justify-center items-center h-screen text-white">
         <LoadingScreen />
-        {/* Substitua isso por um spinner ou algo do tipo */}
       </div>
     );
   }
