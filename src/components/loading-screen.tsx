@@ -6,12 +6,20 @@ export default function LoadingScreen() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const loadData = async () => {
-      // Simulate loading time (remove this in production)
-      await new Promise((resolve) => setTimeout(resolve, 2000));
+    const handleLoad = () => {
       setLoading(false);
     };
-    loadData();
+
+    if (document.readyState === "complete") {
+      // Se a página já estiver carregada, remove o loading imediatamente
+      setLoading(false);
+    } else {
+      window.addEventListener("load", handleLoad);
+    }
+
+    return () => {
+      window.removeEventListener("load", handleLoad);
+    };
   }, []);
 
   if (!loading) return null;
