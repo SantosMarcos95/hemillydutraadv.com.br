@@ -30,4 +30,5 @@ export default function Home() {
       {/* O conteúdo da sua página, exibido quando 'loading' for false */}
     </main>
   );
+
 }

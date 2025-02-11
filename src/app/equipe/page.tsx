@@ -2,33 +2,42 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+
 import { BackgroundGradient } from "@/components/ui/background-gradient";
 import { useEffect, useState } from "react";
 import LoadingScreen from "@/components/loading-screen";
+
 
 const equipe = [
   {
     nome: "Dra. July Bublitz",
     cargo: "Advogada Sênior | CEO | Founder",
 
+
     foto: "https://drive.google.com/uc?export=view&id=1VUMHQjFszSpBHnjiNOoBYQYMt5HRN10j",
+
   },
   {
     nome: "Dra. Aline",
     cargo: "Advogado Sênior | Coordenadora Geral",
 
+
     foto: "https://drive.google.com/uc?export=view&id=1ojp5WP-VIVc0Wo5IFfA_MMPWBDmcTt6c",
+
   },
 
   {
     nome: "Dra. Mallu",
     cargo: "Advogada Pleno | Coordenadora Previdenciário",
 
+
     foto: "https://drive.google.com/uc?export=view&id=1uUGLVFglJyri_z-jmaDDYheOVGGZ3zmD",
+
   },
 ];
 
 export default function Equipe() {
+
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -63,6 +72,7 @@ export default function Equipe() {
         />
       </div>
       <div className="relative z-20 max-w-7xl mx-auto">
+
         <motion.h1
           initial={{ opacity: 0.5, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -71,11 +81,13 @@ export default function Equipe() {
             duration: 0.8,
             ease: "easeInOut",
           }}
+
           className="bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-4xl mb-20 mt-8"
         >
           Equipe
         </motion.h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
           {equipe.map((membro, index) => (
             <motion.div
               key={membro.nome}
@@ -90,6 +102,7 @@ export default function Equipe() {
                   alt={membro.nome}
                   width={200}
                   height={200}
+
                   className="mx-auto rounded-3xl hover:opacity-90 transition-opacity duration-300"
                 />
               </BackgroundGradient>
@@ -97,6 +110,7 @@ export default function Equipe() {
                 {membro.nome}
               </h3>
               <p className="text-gray-300">{membro.cargo}</p>
+
             </motion.div>
           ))}
         </div>

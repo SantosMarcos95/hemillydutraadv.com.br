@@ -1,4 +1,5 @@
 "use client";
+
 import { motion } from "framer-motion";
 import Image from "next/image";
 import ExpandableCardDemo from "@/components/ui/expandable-card-demo-grid";
@@ -129,6 +130,7 @@ export default function AreasAtuacao() {
     <section
       id="areas"
       className="relative max-h-screen flex items-center w-full py-16 sm:py-24 "
+
       aria-labelledby="areas-title"
     >
       <motion.div
@@ -138,17 +140,21 @@ export default function AreasAtuacao() {
         transition={{ duration: 1 }}
       >
         <Image
+
           src="https://drive.google.com/uc?export=view&id=1u39EE3GOegTIiV0lAh5laZB9LlKveV6z"
+
           alt="Fundo representando áreas de atuação jurídica"
           layout="fill"
           objectFit="cover"
           quality={100}
           className="z-0"
+
         />
       </motion.div>
 
       <div className="max-h-screen md:w-1/2 mb-8 md:mb-0 p-10 ">
         <ExpandableCardDemo cards={areas} />
+
       </div>
     </section>
   );

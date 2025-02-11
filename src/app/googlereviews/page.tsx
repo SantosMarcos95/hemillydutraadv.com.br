@@ -1,3 +1,4 @@
+
 "use client";
 import { Card, CardContent } from "@/components/ui/card";
 import { ChevronDown, Star } from "lucide-react";
@@ -9,6 +10,7 @@ import LoadingScreen from "@/components/loading-screen";
 import qrcode from "../../../public/qrcode.png";
 
 const items = [
+
   {
     name: "Ana Caroline de Souza",
     rating: 5,
@@ -30,6 +32,7 @@ const items = [
 ];
 
 export default function GoogleReviews() {
+
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -49,12 +52,14 @@ export default function GoogleReviews() {
     );
   }
 
+
   return (
     <section
       id="avaliacoes"
       className=" relative  min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8"
     >
       <Image
+
         src="https://drive.google.com/uc?export=view&id=1qvaLw2AydS4rGwCg4AVjvLunaQMms91U"
         alt="Background"
         layout="fill"
@@ -68,18 +73,23 @@ export default function GoogleReviews() {
         </div>
         <div className="grid grid-cols-1 content-center md:grid-cols-3 gap-6 mb-12">
           {items.map((item, index) => (
+
             <Card key={index} className=" bg-black bg-opacity-50 text-gray-100">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <div className="flex-1">
+
                     <h3 className="font-semibold">{item.name}</h3>
+
 
                     <div className="flex items-center">
                       {[...Array(5)].map((_, i) => (
                         <Star
                           key={i}
                           className={`w-5 h-5 ${
+
                             i < item.rating
+
                               ? "text-yellow-400 fill-yellow-400"
                               : "text-gray-400"
                           }`}
@@ -94,11 +104,14 @@ export default function GoogleReviews() {
                   />
                 </div>
 
+
                 <p className="text-sm">{item.comment}</p>
+
               </CardContent>
             </Card>
           ))}
         </div>
+
 
         <div>
           <div className="flex flex-col items-center">
@@ -115,6 +128,7 @@ export default function GoogleReviews() {
               height={200}
             />
           </div>
+
         </div>
       </div>
     </section>
