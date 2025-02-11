@@ -1,62 +1,136 @@
 "use client";
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import Image from "next/image";
-
-import background from "../../../public/background/backgroundAreas.jpeg";
-import { BackgroundGradient } from "@/components/ui/background-gradient";
+import ExpandableCardDemo from "@/components/ui/expandable-card-demo-grid";
+import { useEffect, useState } from "react";
+import LoadingScreen from "@/components/loading-screen";
 
 const areas = [
   {
-    titulo: "Direito Civil",
-    descricao:
+    title: "Direito Civil",
+    description:
       "Contratos, responsabilidade civil, direito de família e sucessões.",
+    src: "https://drive.google.com/uc?export=view&id=1wF0ThpckYtyLgqZMAXVOmMAe8Xydhj0B",
+    ctaText: "Saiba mais",
+    ctaLink: "#", // Defina o link de chamada para ação
+    content: () => (
+      <p>
+        O Direito Civil abrange uma série de questões legais, como contratos,
+        responsabilidade civil, e direito de família. Ele é a base para a
+        regulamentação da vida cotidiana das pessoas.
+      </p>
+    ),
+    image: () => (
+      <Image
+        priority
+        width={200}
+        height={200}
+        quality={100} // Qualidade máxima
+        src="https://drive.google.com/uc?export=view&id=1wF0ThpckYtyLgqZMAXVOmMAe8Xydhj0B"
+        alt="Direito Civil"
+      />
+    ),
   },
   {
-    titulo: "Direito Trabalhista",
-    descricao:
+    title: "Direito Trabalhista",
+    description:
       "Relações de trabalho, direitos do trabalhador e negociações sindicais.",
+    src: "https://drive.google.com/uc?export=view&id=1GmSSKWL97iSmGfIz2KH7jOVTqXjYwORR", // Imagem de exemplo, substitua conforme necessário
+    ctaText: "Saiba mais",
+    ctaLink: "#", // Defina o link de chamada para ação
+    content: () => (
+      <p>
+        O Direito Trabalhista trata das relações entre empregados e
+        empregadores, abrangendo questões de direitos trabalhistas, negociações
+        sindicais, e soluções de conflitos no ambiente de trabalho.
+      </p>
+    ),
+
+    image: () => (
+      <Image
+        priority
+        width={200}
+        height={200}
+        quality={100} // Qualidade máxima
+        src="https://drive.google.com/uc?export=view&id=1GmSSKWL97iSmGfIz2KH7jOVTqXjYwORR"
+        alt="Direito Trabalhista"
+      />
+    ),
   },
   {
-    titulo: "Direito Empresarial",
-    descricao: "Constituição de empresas, contratos comerciais.",
+    title: "Direito Empresarial",
+    description: "Constituição de empresas, contratos comerciais.",
+    src: "https://drive.google.com/uc?export=view&id=1syCnPJ664eibDeDg-xzdM4Dyspq2D40L", // Imagem de exemplo, substitua conforme necessário
+    ctaText: "Saiba mais",
+    ctaLink: "#", // Defina o link de chamada para ação
+    content: () => (
+      <p>
+        O Direito Empresarial regula a constituição, funcionamento e extinção de
+        empresas, além de tratar de contratos comerciais e a proteção de marcas
+        e patentes.
+      </p>
+    ),
+    image: () => (
+      <Image
+        priority
+        width={200}
+        height={200}
+        quality={100} // Qualidade máxima
+        src="https://drive.google.com/uc?export=view&id=1syCnPJ664eibDeDg-xzdM4Dyspq2D40L"
+        alt="Direito Trabalhista"
+      />
+    ),
   },
   {
-    titulo: "Direito Previdenciário",
-    descricao:
+    title: "Direito Previdenciário",
+    content: () => (
+      <p>
+        O Direito Previdenciário aborda questões relacionadas a benefícios de
+        aposentadoria, pensões, revisões e planejamento de aposentadoria, para
+        garantir os direitos dos trabalhadores no sistema previdenciário.
+      </p>
+    ),
+    description:
       "Consultoria e assessoria para obtenção de benefícios previdenciários, revisão de aposentadorias e planejamento previdenciário.",
+    src: "https://drive.google.com/uc?export=view&id=12KLxo_l3-t9k2xJqQjzXMXBcBBHLO0_M", // Imagem de exemplo, substitua conforme necessário
+    ctaText: "Saiba mais",
+    ctaLink: "#", // Defina o link de chamada para ação
+    image: () => (
+      <Image
+        priority
+        width={200}
+        height={200}
+        quality={100} // Qualidade máxima
+        src="https://drive.google.com/uc?export=view&id=12KLxo_l3-t9k2xJqQjzXMXBcBBHLO0_M"
+        alt="Direito Trabalhista"
+      />
+    ),
   },
 ];
 
-function AreaCard({
-  titulo,
-  descricao,
-}: {
-  titulo: string;
-  descricao: string;
-}) {
-  return (
-    <div className="transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
-      <BackgroundGradient>
-        <Card className="rounded-3xl bg-black bg-opacity-50 text-gray-100 h-[200px] overflow-hidden">
-          <CardHeader>
-            <CardTitle>{titulo}</CardTitle>
-          </CardHeader>
-          <CardContent className="h-[150px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-800">
-            <p>{descricao}</p>
-          </CardContent>
-        </Card>
-      </BackgroundGradient>
-    </div>
-  );
-}
-
 export default function AreasAtuacao() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const loadData = async () => {
+      setLoading(false);
+    };
+    loadData();
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center h-screen text-white">
+        <LoadingScreen />
+      </div>
+    );
+  }
   return (
     <section
       id="areas"
-      className="relative min-h-screen flex items-center w-full py-16 sm:py-24"
+      className="relative max-h-screen flex items-center w-full py-16 sm:py-24 "
+
       aria-labelledby="areas-title"
     >
       <motion.div
@@ -66,45 +140,21 @@ export default function AreasAtuacao() {
         transition={{ duration: 1 }}
       >
         <Image
-          src={background}
+
+          src="https://drive.google.com/uc?export=view&id=1u39EE3GOegTIiV0lAh5laZB9LlKveV6z"
+
           alt="Fundo representando áreas de atuação jurídica"
           layout="fill"
           objectFit="cover"
           quality={100}
           className="z-0"
-          priority
+
         />
       </motion.div>
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row">
-        <div className="md:w-1/2 mb-8 md:mb-0">
-          <motion.h1
-            id="areas-title"
-            initial={{ opacity: 0.5, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-              delay: 0.3,
-              duration: 0.8,
-              ease: "easeInOut",
-            }}
-            className="bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-center text-3xl sm:text-4xl font-medium tracking-tight text-transparent md:text-4xl mb-8"
-          >
-            Áreas de Atuação
-          </motion.h1>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            {areas.map((area, index) => (
-              <motion.div
-                key={area.titulo}
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <AreaCard titulo={area.titulo} descricao={area.descricao} />
-              </motion.div>
-            ))}
-          </div>
-        </div>
-        <div className="md:w-1/2"></div>
+      <div className="max-h-screen md:w-1/2 mb-8 md:mb-0 p-10 ">
+        <ExpandableCardDemo cards={areas} />
+
       </div>
     </section>
   );

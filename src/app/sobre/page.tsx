@@ -1,6 +1,11 @@
+
+"use client";
 import Image from "next/image";
-import draHemilly from "../../../public/advogadas/dra-hemilly.jpeg";
+
 import { BackgroundGradient } from "@/components/ui/background-gradient";
+import { useEffect, useState } from "react";
+import LoadingScreen from "@/components/loading-screen";
+
 
 const description = {
   name: "Dra. Hemilly",
@@ -13,6 +18,26 @@ const description = {
 };
 
 export default function Sobre() {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const loadData = async () => {
+      setLoading(false); // Após o tempo, o estado de loading é alterado para false
+    };
+    loadData();
+  }, []);
+
+  if (loading) {
+    // Exibe um indicador de carregamento até a página estar pronta
+    return (
+      <div className="flex justify-center items-center h-screen text-white">
+        <LoadingScreen />
+        {/* Substitua isso por um spinner ou algo do tipo */}
+      </div>
+    );
+  }
+
   return (
     <section
       id="sobre"
@@ -22,7 +47,9 @@ export default function Sobre() {
         <div className="flex-shrink-0 rounded-3xl transition-transform duration-300 ease-in-out hover:scale-105">
           <BackgroundGradient>
             <Image
-              src={draHemilly}
+
+              src="https://drive.google.com/uc?export=view&id=1nKYjgUifbSFAF19eTaMEQLvgUvlZG46h"
+
               alt="Dra. Hemilly"
               width={300}
               height={300}
@@ -32,7 +59,9 @@ export default function Sobre() {
           </BackgroundGradient>
         </div>
 
-        <div className="flex flex-col w-full lg:w-[40%] bg-black bg-opacity-50 text-white rounded-3xl p-6 lg:p-8">
+
+        <div className="flex flex-col w-full lg:w-[40%] bg-black  text-white rounded-3xl p-6 lg:p-8">
+
           <div className="flex flex-col text-center lg:text-left gap-6">
             <h1 className="text-3xl lg:text-4xl font-bold">
               {description.name || "Nome Não Fornecido"}
