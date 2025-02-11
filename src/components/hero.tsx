@@ -1,21 +1,19 @@
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
-
 import Image from "next/image";
-import backgroundHero from "../../../public/background/backgroundHero.jpeg";
 
 export default function Hero() {
   return (
     <main className=" min-h-screen flex items-center justify-center">
       <Image
-        src={backgroundHero}
+        src="https://drive.google.com/uc?export=view&id=1yT57kdlwwmmnx3hN9JLiQZt4MsRJ5NdQ"
         alt="Background"
         layout="fill"
         objectFit="cover"
         quality={100}
         className="z-0"
       />
-      <div className="z-10  flex flex-col items-center text-center rounded-3xl dark:text-white bg-black bg-opacity-50 md:w-1/2 p-8 space-y-8 backdrop-blur-sm">
+      <div className="z-10  flex flex-col items-center text-center rounded-3xl dark:text-white bg-black bg-opacity-50 md:w-1/2 p-6 space-y-8 backdrop-blur-sm">
         <h1 className="mb-4 text-4xl font-bold">
           Confiança e Experiência Jurídica ao Seu Lado
         </h1>

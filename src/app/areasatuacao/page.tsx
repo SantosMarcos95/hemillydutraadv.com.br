@@ -1,8 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import background from "../../../public/background/backgroundAreas.jpeg";
-import ExpandableCardDemo from "@/components/expandable-card-demo-grid";
+import ExpandableCardDemo from "@/components/ui/expandable-card-demo-grid";
+import { useEffect, useState } from "react";
+import LoadingScreen from "@/components/loading-screen";
 
 const areas = [
   {
@@ -108,6 +109,24 @@ const areas = [
 ];
 
 export default function AreasAtuacao() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const loadData = async () => {
+      setLoading(false); // Após o tempo, o estado de loading é alterado para false
+    };
+    loadData();
+  }, []);
+
+  if (loading) {
+    // Exibe um indicador de carregamento até a página estar pronta
+    return (
+      <div className="flex justify-center items-center h-screen text-white">
+        <LoadingScreen />
+        {/* Substitua isso por um spinner ou algo do tipo */}
+      </div>
+    );
+  }
   return (
     <section
       id="areas"

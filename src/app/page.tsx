@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
-import Hero from "@/components/ui/hero"; // Seu componente Hero
+import Hero from "@/components/hero"; // Seu componente Hero
+import LoadingScreen from "@/components/loading-screen";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -16,7 +17,7 @@ export default function Home() {
     // Exibe um indicador de carregamento até a página estar pronta
     return (
       <div className="flex justify-center items-center h-screen text-white">
-        <div>Carregando...</div>{" "}
+        <LoadingScreen />
         {/* Substitua isso por um spinner ou algo do tipo */}
       </div>
     );
