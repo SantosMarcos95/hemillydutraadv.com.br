@@ -62,14 +62,14 @@ export function MobileMenu() {
             </a>
             <a
 
-              href="/sobre"
+              // href="/sobre"
               className="flex items-center gap-3 text-gray-300 hover:text-gray-200"
             >
               <Book className="h-5 w-5" />
               <span>Sobre</span>
             </a>
             <a
-              href="/areasatuacao"
+              // href="/areasatuacao"
               className="flex items-center gap-3 text-gray-300 hover:text-gray-200"
             >
               <Scale className="h-5 w-5" />
@@ -77,14 +77,14 @@ export function MobileMenu() {
 
             </a>
             <a
-              href="/equipe"
+              // href="/equipe"
               className="flex items-center gap-3 text-gray-300 hover:text-gray-200"
             >
               <Users className="h-5 w-5" />
               <span>Equipe</span>
             </a>
             <a
-              href="/googlereviews"
+              // href="/googlereviews"
               className="flex items-center gap-3 text-gray-300 hover:text-gray-200"
             >
               <Star className="h-5 w-5" />
@@ -111,7 +111,7 @@ export function MobileMenu() {
                 <span>hemillyfatimaadv@gmail.com</span>
               </a>
               <a
-                href="https://www.google.com/maps?rlz=1C1FKPE_enBR1145BR1145&gs_lcrp=EgZjaHJvbWUqDwgBEC4YDRivARjHARiABDIGCAAQRRg5Mg8IARAuGA0YrwEYxwEYgAQyDwgCEC4YDRivARjHARiABDIJCAMQABgNGIAEMg8IBBAuGA0YrwEYxwEYgAQyCQgFEAAYDRiABDIPCAYQLhgNGK8BGMcBGIAEMgkIBxAAGA0YgAQyCAgIEAAYDRge0gEINTM2N2owajeoAgCwAgA&um=1&ie=UTF-8&fb=1&gl=br&sa=X&geocode=Kfvoh16wNSeVMbuUdG2IeoVN&daddr=R.+Pref.+Ari+Wagner,+148+-+Centro,+Palho%C3%A7a+-+SC,+88130-070https://www.google.com.br/maps/place/R.+Pref.+Ari+Wagner,+148+-+Centro,+Palho%C3%A7a+-+SC,+88130-070/@-27.6438899,-48.6691743,17z/data=!3m1!4b1!4m6!3m5!1s0x952735b05e4c2c05:0x123cfff44bbc547b!8m2!3d-27.6438899!4d-48.6665994!16s%2Fg%2F11cnddhjqz?entry=ttu&g_ep=EgoyMDI1MDEyMC4wIKXMDSoASAFQAw%3D%3D"
+                // href="https://www.google.com/maps?rlz=1C1FKPE_enBR1145BR1145&gs_lcrp=EgZjaHJvbWUqDwgBEC4YDRivARjHARiABDIGCAAQRRg5Mg8IARAuGA0YrwEYxwEYgAQyDwgCEC4YDRivARjHARiABDIJCAMQABgNGIAEMg8IBBAuGA0YrwEYxwEYgAQyCQgFEAAYDRiABDIPCAYQLhgNGK8BGMcBGIAEMgkIBxAAGA0YgAQyCAgIEAAYDRge0gEINTM2N2owajeoAgCwAgA&um=1&ie=UTF-8&fb=1&gl=br&sa=X&geocode=Kfvoh16wNSeVMbuUdG2IeoVN&daddr=R.+Pref.+Ari+Wagner,+148+-+Centro,+Palho%C3%A7a+-+SC,+88130-070https://www.google.com.br/maps/place/R.+Pref.+Ari+Wagner,+148+-+Centro,+Palho%C3%A7a+-+SC,+88130-070/@-27.6438899,-48.6691743,17z/data=!3m1!4b1!4m6!3m5!1s0x952735b05e4c2c05:0x123cfff44bbc547b!8m2!3d-27.6438899!4d-48.6665994!16s%2Fg%2F11cnddhjqz?entry=ttu&g_ep=EgoyMDI1MDEyMC4wIKXMDSoASAFQAw%3D%3D"
                 className="flex items-center gap-3"
               >
                 <MapPin className="h-4 w-4" />

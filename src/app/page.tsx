@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
     <main className="relative font-serif">
-      <Hero />{" "}
+      {/* <Hero />{" "} */}
       {/* O conteúdo da sua página, exibido quando 'loading' for false */}
     </main>
   );
